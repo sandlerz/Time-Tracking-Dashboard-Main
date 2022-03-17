@@ -62,6 +62,7 @@ main {
 .dashboard .profile div h1 {
   color: white;
   font-weight: 300;
+  font-size: 4rem;
 }
 .dashboard .buttons-group {
   padding: 30px 33px 35px;
@@ -78,7 +79,10 @@ main {
 }
 .dashboard .buttons-group .button:hover {
   transition: color 0.2s ease;
-  color: #bdc1ff;
+  color: white;
+}
+.dashboard .buttons-group .button:focus {
+  color: white;
 }
 
 .container {
@@ -112,8 +116,8 @@ main {
   display: flex;
   justify-content: space-between;
 }
-.container .stats .title h4 {
-  font-weight: 500;
+.container .stats .title h3 {
+  font-weight: 400;
 }
 .container .stats .title img {
   -o-object-fit: none;
