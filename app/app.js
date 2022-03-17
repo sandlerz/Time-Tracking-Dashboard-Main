@@ -30,7 +30,7 @@ const addData = (data) => {
 };
 
 const getData = async () => {
-  const response = await fetch("/app/data.json");
+  const response = await fetch("app/data.json");
   if (response.status === 200) {
     const data = await response.json();
     addData(data);
