@@ -1,0 +1,23 @@
+{
+  "name": "time-tracking-dashboard-main",
+  "version": "1.0.0",
+  "description": "- Live Site URL: https://sandlerz.github.io/Time-Tracking-Dashboard-Main/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandlerz/Time-Tracking-Dashboard-Main.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sandlerz/Time-Tracking-Dashboard-Main/issues"
+  },
+  "homepage": "https://github.com/sandlerz/Time-Tracking-Dashboard-Main#readme",
+  "devDependencies": {
+    "sass": "^1.49.9"
+  }
+}

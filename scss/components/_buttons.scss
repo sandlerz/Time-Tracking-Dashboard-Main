@@ -1,0 +1,22 @@
+@use '../variables' as *;
+
+.buttons-group {
+  padding: 30px 33px 35px;
+  height: 32%;
+  max-height: 165px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .button {
+    text-decoration: none;
+    color: $Unsaturated-blue;
+    width: 82px;
+  }
+  .button:hover {
+    transition: color 0.2s ease;
+    color: white;
+  }
+  .button:focus{
+    color: white;
+  }
+}

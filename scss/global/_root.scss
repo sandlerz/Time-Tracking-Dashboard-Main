@@ -1,8 +1,9 @@
+@use '../variables' as *;
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
-
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  background-color: black;
 }
 
 *,
@@ -19,9 +20,13 @@ body {
   display: grid;
   place-content: center;
   min-height: 100vh;
+  background-color: $Very-dark-blue;
 }
 
-// main{
-// max-width: 1440px;
-// text-align: center;
-// }
+main {
+  display: grid;
+  margin: 20px;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+}

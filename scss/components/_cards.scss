@@ -1,0 +1,107 @@
+@use '../variables' as *;
+
+.container {
+  border-radius: 15px 15px 20px 20px;
+  height: 245px;
+  width: 250px;
+
+  .bg {
+    text-align: right;
+    padding: 0px 17px;
+    height: 18.4%;
+    overflow: hidden;
+
+    img {
+      position: relative;
+      top: -10px;
+      display: inline-block;
+    }
+  }
+
+  .stats {
+    background-color: $Dark-blue;
+    color: white;
+    padding: 30px 30px 35px;
+    height: 81.7%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+
+      h2 {
+        font-weight: 400;
+      }
+
+      img {
+        object-fit: none;
+        display: block;
+        border-radius: 50%;
+        cursor: pointer;
+        padding: 3px;
+      }
+      img:hover{
+        filter: brightness(2);
+        background-color: hsla(1, 0%, 1%, 0.2);
+      }
+    }
+
+    .value {
+      .actual {
+        font-size: 5.5rem;
+        font-weight: 300;
+        margin-bottom: 8px;
+      }
+      .previous {
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: $Pale-Blue;
+      }
+    }
+  }
+  .stats:hover{
+    transition: background-color 0.3s ease;
+    background-color: $Blue;
+  }
+  
+}
+
+.work {
+  background-color: $Light-red-work;
+}
+
+.play {
+  background-color: $Soft-blue-play;
+}
+
+.study {
+  background-color: $Light-red-study;
+}
+
+.exercise {
+  background-color: $Lime-green-exercise;
+  .bg {
+    img {
+      position: relative;
+      top: 0px;
+    }
+  }
+}
+
+.social {
+  background-color: $Violet-social;
+  .bg {
+    img {
+      position: relative;
+      top: -15px;
+    }
+  }
+}
+
+.self-care {
+  background-color: $Soft-orange-self-care;
+}

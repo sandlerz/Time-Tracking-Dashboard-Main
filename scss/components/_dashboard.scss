@@ -1,0 +1,37 @@
+@use '../variables' as *;
+
+.dashboard {
+  max-width: 255px;
+  min-height: 520px;
+  text-align: left;
+  background-color: $Dark-blue;
+  border-radius: 15px;
+  grid-row: span 2;
+
+  .profile {
+    background-color: $Blue;
+    padding: 33px;
+    height: 68%;
+    border-radius: 15px;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: 82px;
+      border-radius: 50%;
+      border: 3px white solid;
+      margin-bottom: 40px;
+    }
+    div {
+      p {
+        color: $Pale-Blue;
+        font-size: 1.5rem;
+      }
+      h1 {
+        color: white;
+        font-weight: 300;
+        font-size: 4rem;
+      }
+    }
+  }
+}

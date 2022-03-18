@@ -1,37 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
-html {
-  font-size: 62.5%;
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Rubik", sans-serif;
-  font-size: 1.8rem;
-  display: grid;
-  place-content: center;
-  min-height: 100vh;
-}
-
-body {
-  background-color: #0f1424;
-}
-
-main {
-  display: grid;
-  margin: 20px;
-  gap: 30px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 1fr;
-}
-
 .dashboard {
   max-width: 255px;
   min-height: 520px;
@@ -64,7 +31,8 @@ main {
   font-weight: 300;
   font-size: 4rem;
 }
-.dashboard .buttons-group {
+
+.buttons-group {
   padding: 30px 33px 35px;
   height: 32%;
   max-height: 165px;
@@ -72,16 +40,16 @@ main {
   flex-direction: column;
   justify-content: space-between;
 }
-.dashboard .buttons-group .button {
+.buttons-group .button {
   text-decoration: none;
   color: #6f76c8;
   width: 82px;
 }
-.dashboard .buttons-group .button:hover {
+.buttons-group .button:hover {
   transition: color 0.2s ease;
   color: white;
 }
-.dashboard .buttons-group .button:focus {
+.buttons-group .button:focus {
   color: white;
 }
 
@@ -116,12 +84,11 @@ main {
   display: flex;
   justify-content: space-between;
 }
-.container .stats .title h3 {
+.container .stats .title h2 {
   font-weight: 400;
 }
 .container .stats .title img {
-  -o-object-fit: none;
-     object-fit: none;
+  object-fit: none;
   display: block;
   border-radius: 50%;
   cursor: pointer;
@@ -178,7 +145,38 @@ main {
   background-color: #f1c65b;
 }
 
-@media only screen and (max-width: 1150px) {
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.8rem;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background-color: #0f1424;
+}
+
+main {
+  display: grid;
+  margin: 20px;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+
+@media only screen and (max-width: 71.875em) {
   main {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -190,7 +188,7 @@ main {
     height: 43%;
   }
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 53.125em) {
   main {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -219,7 +217,7 @@ main {
     font-size: 2rem;
   }
 }
-@media only screen and (max-width: 590px) {
+@media only screen and (max-width: 36.875em) {
   main {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -255,4 +253,6 @@ main {
     font-size: 2rem;
     white-space: nowrap;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=index.css.map */
